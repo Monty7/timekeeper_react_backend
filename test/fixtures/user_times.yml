@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clock_in: 2019-10-07 22:39:13
+  clock_out: 2019-10-07 22:39:13
+  month_time: 1
+  user_id: 1
+  date_of_times: MyString
+  month_of_times: MyString
+
+two:
+  clock_in: 2019-10-07 22:39:13
+  clock_out: 2019-10-07 22:39:13
+  month_time: 1
+  user_id: 1
+  date_of_times: MyString
+  month_of_times: MyString
