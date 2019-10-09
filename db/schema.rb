@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_10_08_034027) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "user_times", force: :cascade do |t|
     t.datetime "clock_in"
     t.datetime "clock_out"
