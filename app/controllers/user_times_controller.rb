@@ -1,9 +1,4 @@
 class UserTimesController < ApplicationController
-end
-class UserTimesController < ApplicationController
-    def index
-        #display all of user's times if they have any - User.UserTimes - array index + 1 to correspond to the date
-    end
 
     def create
 
@@ -32,7 +27,7 @@ class UserTimesController < ApplicationController
     end
 
     def update
-        
+   
         user = User.find_by({id: params[:user_id]})
         if user
             user_time_date = user.user_times.find_by({date_of_times: params[:date_of_times]})
@@ -48,7 +43,7 @@ class UserTimesController < ApplicationController
     end
 
     def destroy
-       
+
         user = User.find_by({id: params[:user_id]})
         if user
             user.user_times.find_by({date_of_times: params[:date_of_times]}).destroy

@@ -5,7 +5,9 @@ class UsersController < ApplicationController
     #     render json: {users: users}
     # end
 
+
     def create
+      #  binding.pry
         if params[:name] != ""
             user = User.find_or_create_by(user_params)
             render json: user, include: :user_times
@@ -16,6 +18,7 @@ class UsersController < ApplicationController
     end
 
     def show
+       # binding.pry
         user = User.find_by(id: params[:id])
         render json: user, include: :user_times
        # binding.pry
