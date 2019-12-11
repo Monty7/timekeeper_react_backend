@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
 
     def create
-      #  binding.pry
+       # binding.pry
         if params[:name] != ""
             user = User.find_or_create_by(user_params)
             render json: user, include: :user_times
